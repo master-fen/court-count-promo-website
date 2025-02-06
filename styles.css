@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 0 10%;
-    background-image: url('assets/images/court.webp');
+    background-image: url('images/court.webp'); /* Путь к картинке обновлен */
     background-size: cover;
     background-position: center;
 }
