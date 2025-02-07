@@ -190,3 +190,35 @@ p {
         width: 90%;
     }
 }
+
+/* ===== Устройства с разрешением 1920x1080 (увеличиваем элементы на 50%) ===== */
+@media (min-width: 1920px) {
+    .container {
+        padding: 0 15%; /* Увеличиваем отступы */
+    }
+
+    .content {
+        max-width: 750px; /* Увеличиваем ширину контента */
+    }
+
+    h1 {
+        font-size: 90px; /* Увеличиваем размер заголовка на 50% */
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 27px; /* Увеличиваем размер текста на 50% */
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 27px; /* Увеличиваем размер кнопки */
+        padding: 18px 36px;
+    }
+
+    .phone img {
+        max-height: 750px; /* Увеличиваем размер изображения */
+        width: 90%;
+        object-fit: contain;
+    }
+}
