@@ -65,6 +65,7 @@ p {
 
 .phone img {
     max-height: 500px;
+    max-width: 100%;
     display: block;
     opacity: 0; /* Скрываем изначально, анимация теперь в JS */
     transform: translateY(100%);
@@ -177,7 +178,15 @@ p {
 /* ===== iPhone SE и маленькие экраны (до 400px шириной) ===== */
 @media (max-width: 400px) {
     .phone img {
-        max-height: 380px;
-        width: 85%;
+        max-height: 90%; /* Уменьшаем на 10% */
+        width: 90%;
+    }
+}
+
+/* ===== Планшеты с разрешением 1280x800 (вертикальное расположение) ===== */
+@media (max-width: 800px) and (max-height: 1280px) {
+    .phone img {
+        max-height: 90%; /* Уменьшаем на 10% */
+        width: 90%;
     }
 }
